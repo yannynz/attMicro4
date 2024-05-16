@@ -1,0 +1,20 @@
+<div class="container mt-2">
+    <h2 class="mb-4 text-center font-monospace" style="font-size: 90px">Webchat</h2>
+  
+    <div class="card shadow-lg p-3 mb-5 bg-body rounded">
+      <div class="card-body">
+        <div style="height: 700px;">
+          <div *ngFor="let menssage of menssages">
+              {{menssages}}
+          </div>
+        </div>
+  
+        <div>
+          <textarea class="form-control" style="background-color: rgba(235, 232, 232, 0.288);" type="text" [(ngModel)]="newMenssage" placeholder="Digite sua mensagem"></textarea>
+        </div>
+        <div class="mt-2">
+          <button class="btn btn-outline-secondary" (click)="sendMenssage()">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
